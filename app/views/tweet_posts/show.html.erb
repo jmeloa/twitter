@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @tweet_post.post %>
+</p>
+
+<p>
+  <strong>Id owner:</strong>
+  <%= @tweet_post.id_owner %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tweet_post.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_tweet_post_path(@tweet_post) %> |
+<%= link_to 'Back', tweet_posts_path %>
